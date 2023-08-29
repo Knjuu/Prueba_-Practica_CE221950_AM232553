@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Index</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<body>
+    <form>
+        <label for="nombre">Nombre del empleado:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="cargo">Cargo:</label>
+        <input type="text" id="cargo" name="cargo" required>
+        
+        <label for="horas">Horas trabajadas en el mes:</label>
+        <input type="number" id="horas" name="horas" min="0" required>
+        
+        <label for="pago">Salario por hora:</label>
+        <input type="number" id="pago" name="pago" min="0" step="0.01" required>
+        
+        <button id="calcular" type="button">Calcular Salario</button>
+
+        <p><strong></strong> <span id="Nombre"></span></p>
+        <p><strong></strong> <span id="Cargo"></span></p>
+        <p><strong>Salario base: </strong> <span id="SalarioBase"></span></p>
+        <p><strong></strong> <span id="ISSS"></span></p>
+        <p><strong></strong> <span id="AFP"></span></p>
+        <p><strong>Salario neto: </strong> $<span id="SalarioNeto"></span></p>
+        <p><strong>Renta a pagar:</strong> <span id="RentaAPagar"></span></p>
+    </form>
+    <script src="js/script.js"></script>
+</body>
+</html>
